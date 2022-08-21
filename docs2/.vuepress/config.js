@@ -1,7 +1,12 @@
+const { hopeTheme } = require("vuepress-theme-hope");
+
 module.exports = {
   title: "Hello VuePress",
   description: "Just playing around",
   base: "/",
+  theme: hopeTheme({
+    // 此处放置主题配置
+  }),
   configureWebpack: {
     resolve: {
       alias: {
